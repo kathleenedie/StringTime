@@ -1,6 +1,7 @@
 using System.Net.Mime;
 using System.Reflection.Metadata;
 using FluentValidation;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using StringTime;
@@ -20,7 +21,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddMediatR(typeof(Program).Assembly);
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 builder.Services.AddValidatorsFromAssembly(typeof(AssemblyReference).Assembly);
+builder.Services.AddControllers().AddFluentValidation();
 
 var app = builder.Build();
 
