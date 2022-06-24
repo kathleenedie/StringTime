@@ -33,3 +33,6 @@ C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\FluentValidation.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

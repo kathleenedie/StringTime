@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "P18mbJ4A6Je6/xBgViYsrP6xq5psGLzI/SiUrpWn/7thio4+1hhEkMwqazWy6GsUjpdioefQxpfE2HDy4rjwdw==",
+  "dgSpecHash": "5W+DgRQtXagYyIIiluL+Rrv/3Aes8ZYLVGyAZAXAam2yuwDqGysMdqwXTPc4IV7ZQGDrUmbhiO8ZPitQonQI8A==",
   "success": true,
   "projectFilePath": "C:\\Repos\\z_Learning\\StringTime\\StringTime\\StringTime\\StringTime.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\E0070773\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\E0070773\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.0\\fluentvalidation.aspnetcore.11.1.0.nupkg.sha512",
+    "C:\\Users\\E0070773\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
