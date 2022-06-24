@@ -17,12 +17,17 @@ namespace StringTime.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet(Name = "GetAllWordStrings")]
-        public async Task<List<StringTime>> GetAllWordStrings()
+        [HttpGet(Name = "GetAllStringTimes")]
+        public async Task<IActionResult> GetAllStringTimes()
         {
-            return await _context.StringTimes.ToListAsync();
-        }
+            var stringtimes = await _mediator.Send(new GetAllStringTimesQuery());
+            return Ok(stringtimes);
 
+            //public async Task<List<StringTime>> GetAllWordStrings()
+            //{
+            //    return await _context.StringTimes.ToListAsync();
+            //}
+        }
 
         [HttpPost("{id}/{words}", Name = "PostWordStrings")]
         public async Task<IActionResult> AddStringTime([FromRoute] int id, [FromRoute] string words)
