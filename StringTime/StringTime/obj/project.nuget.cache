@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5W+DgRQtXagYyIIiluL+Rrv/3Aes8ZYLVGyAZAXAam2yuwDqGysMdqwXTPc4IV7ZQGDrUmbhiO8ZPitQonQI8A==",
+  "dgSpecHash": "AjCdX/4zVh8YdFZZwDyy45pS4bv+iD1UcRF8lcsL1DMh8vjkfU/lhTQWCcWHcNC3Dyc5NKnWqRJeOYaGtpD10g==",
   "success": true,
   "projectFilePath": "C:\\Repos\\z_Learning\\StringTime\\StringTime\\StringTime\\StringTime.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\E0070773\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\E0070773\\.nuget\\packages\\nlog\\5.0.1\\nlog.5.0.1.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\E0070773\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

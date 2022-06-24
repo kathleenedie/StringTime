@@ -2,9 +2,9 @@
 
 namespace StringTime;
 
-public class AddStringTimeCommandValidator : AbstractValidator<AddStringTimeCommand>
+public class StringTimeValidator : AbstractValidator<StringTime>
 {
-    public AddStringTimeCommandValidator()
+    public StringTimeValidator()
     {
         RuleFor(s => s.Id).NotEmpty();
         RuleFor(s => s.Words).MaximumLength(25);

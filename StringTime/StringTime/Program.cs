@@ -1,4 +1,5 @@
 using System.Net.Mime;
+using System.Reflection;
 using System.Reflection.Metadata;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -23,7 +24,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddMediatR(typeof(Program).Assembly);
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 builder.Services.AddValidatorsFromAssembly(typeof(AssemblyReference).Assembly);
-builder.Services.AddControllers().AddFluentValidation();
+builder.Services.AddControllers().AddFluentValidation(options =>
+{
+    options.ImplicitlyValidateChildProperties = true;
+    options.ImplicitlyValidateRootCollectionElements = true;
+    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+});
 
 var app = builder.Build();
 

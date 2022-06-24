@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace StringTime.Controllers
 {
@@ -21,17 +22,16 @@ namespace StringTime.Controllers
         {
             var stringtimes = await _mediator.Send(new GetAllStringTimesQuery());
             return Ok(stringtimes);
-
-            //public async Task<List<StringTime>> GetAllWordStrings()
-            //{
-            //    return await _context.StringTimes.ToListAsync();
-            //}
         }
 
         [HttpPost("{id}/{words}", Name = "PostWordStrings")]
         public async Task<IActionResult> AddStringTime([FromRoute] int id, [FromRoute] string words)
         {
             var stringtime = await _mediator.Send(new AddStringTimeCommand(id, words));
+            if (!ModelState.IsValid)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+            }
             return Ok(stringtime);
         }
     }
