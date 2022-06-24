@@ -1,6 +1,6 @@
-namespace StringTime
+﻿namespace StringTime
 {
-    public class StringTime
+    public class AddStringTime
     {
         public int Id { get; set; }
 

@@ -1,32 +1,34 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace StringTime.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[Action]")]
     public class StringTimeController : ControllerBase
     {
-        private static readonly string[] WordStrings = new[]
-        {
-        "Paris", "Barcelona", "Bangkok", "Larnica", "Algiers"
-    };
+        private readonly AppDbContext _context;
+        private readonly ISender _mediator;
 
-        private readonly ILogger<StringTimeController> _logger;
-
-        public StringTimeController(ILogger<StringTimeController> logger)
+        public StringTimeController(AppDbContext context, ISender mediator)
         {
-            _logger = logger;
+            _context = context;
+            _mediator = mediator;
         }
 
-        [HttpGet(Name = "GetWordStrings")]
-        public IEnumerable<StringTime> Get()
+        [HttpGet(Name = "GetAllWordStrings")]
+        public async Task<List<StringTime>> GetAllWordStrings()
         {
-            return Enumerable.Range(1, 5).Select(index => new StringTime
-            {
-                Number = index,
-                Words = WordStrings[Random.Shared.Next(WordStrings.Length)]
-            })
-            .ToArray();
+            return await _context.StringTimes.ToListAsync();
+        }
+
+
+        [HttpPost("{id}/{words}", Name = "PostWordStrings")]
+        public async Task<IActionResult> AddStringTime([FromRoute] int id, [FromRoute] string words)
+        {
+            var stringtime = await _mediator.Send(new AddStringTimeCommand(id, words));
+            return Ok(stringtime);
         }
     }
 }

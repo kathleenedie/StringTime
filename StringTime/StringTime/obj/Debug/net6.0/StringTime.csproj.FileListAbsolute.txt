@@ -25,3 +25,11 @@ C:\Repos\z_Learning\StringTime\StringTime\StringTime\obj\Debug\net6.0\refint\Str
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\obj\Debug\net6.0\StringTime.pdb
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\obj\Debug\net6.0\StringTime.genruntimeconfig.cache
 C:\Repos\z_Learning\StringTime\StringTime\StringTime\obj\Debug\net6.0\ref\StringTime.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\MediatR.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Repos\z_Learning\StringTime\StringTime\StringTime\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
