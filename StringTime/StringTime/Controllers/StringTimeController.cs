@@ -1,6 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StringTime.Commands;
+using StringTime.Query;
 
 namespace StringTime.Controllers
 {
@@ -24,10 +26,10 @@ namespace StringTime.Controllers
             return Ok(stringtimes);
         }
 
-        [HttpPost("{id}/{words}", Name = "PostWordStrings")]
-        public async Task<IActionResult> AddStringTime([FromRoute] int id, [FromRoute] string words)
+        [HttpPost(Name = "PostWordStrings")]
+        public async Task<IActionResult> AddStringTime([FromBody] AddStringTimeRequestDto model)
         {
-            var stringtime = await _mediator.Send(new AddStringTimeCommand(id, words));
+            var stringtime = await _mediator.Send(new AddStringTimeCommand(model.Id, model.Words));
             if (!ModelState.IsValid)
             {
                 return StatusCode(StatusCodes.Status400BadRequest, ModelState);

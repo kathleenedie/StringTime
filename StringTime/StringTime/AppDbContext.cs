@@ -17,7 +17,7 @@ namespace StringTime
             builder.Entity<StringTime>().ToTable("StringTimes");
             builder.Entity<StringTime>().HasKey(s => s.Id);
             builder.Entity<StringTime>().Property(p => p.Id).ValueGeneratedOnAdd();
-            builder.Entity<StringTime>().Property(p => p.Words).HasMaxLength(25);
+            builder.Entity<StringTime>().Property(p => p.Words);
         }
     }
 }

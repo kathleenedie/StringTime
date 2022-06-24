@@ -1,8 +1,9 @@
 ﻿using FluentValidation;
+using StringTime.Commands;
 
-namespace StringTime;
+namespace StringTime.Validation;
 
-public class StringTimeValidator : AbstractValidator<StringTime>
+public class StringTimeValidator : AbstractValidator<AddStringTimeCommand>
 {
     public StringTimeValidator()
     {

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace StringTime
+namespace StringTime.Query
 {
     public class GetAllStringTimesQuery : IRequest<List<StringTime>>
     {

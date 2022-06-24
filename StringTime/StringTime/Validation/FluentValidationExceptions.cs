@@ -1,4 +1,4 @@
-﻿namespace StringTime
+﻿namespace StringTime.Validation
 {
     public class FluentValidationExceptions : Exception
     {
